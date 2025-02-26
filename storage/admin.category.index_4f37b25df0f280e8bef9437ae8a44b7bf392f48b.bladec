@@ -1,0 +1,9 @@
+<?php /* Để kế thừa lại matter layout ta sử dụng extend */ ?>
+<?php $_shouldextend[1]=1; ?>
+<?php /* Một file chỉ được kế thừa 1 matter layout */ ?>
+
+<?php /* Nội dung hiển thị được đặt trong section  */ ?>
+<?php $this->startSection('content'); ?>
+ <h1>This is menu list page </h1>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layouts.admin'); } ?>

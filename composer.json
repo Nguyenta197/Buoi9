@@ -1,0 +1,20 @@
+{
+    "name": "win10/buoi9_bladeview",
+    "description": "Gray Wolf",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": ["common/function.php"]
+    },
+    "authors": [
+        {
+            "name": "Nguyentt"
+        }
+    ],
+    "require": {
+        "phroute/phroute": "^2.2",
+        "eftec/bladeone": "^4.17"
+    }
+}
